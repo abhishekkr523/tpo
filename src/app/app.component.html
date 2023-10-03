@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Government Engineering College Jhalawar">
+  <meta name="author" content="Developed by Vikas Dhakar email: vkdhakar1997@gmail.com">
+  <title>TPO GECJ | Home</title>
+
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="container">
+      <div class="topHeading">
+        <div class="right">
+          <div class="col">
+            <a href="http://gecj.ac.in/" target="_blank">
+              Government Engineering College Jhalawar
+            </a>
+          </div>
+          <div class="tpo">
+            <a routerLink="/">Office of
+              Training &amp; Placement</a>
+          </div>
+        </div>
+      </div>
+      <div class="ban_bar">
+        <div class="fox2">
+        </div>
+        <div class="contact">
+          <div class="email">
+            <div class="em-icon"><i class="fa-brands fa-telegram" style="color:#ff6f00"></i></div>
+            <div class="em">
+              <h4>Email</h4>
+              <p>youremail@email.com</p>
+            </div>
+          </div>
+          <div class="call">
+            <div class="cal-icon"><i class="fa-solid fa-phone" style="color:#ff6f00"></i></div>
+            <div class="cal">
+              <h4>Call</h4>
+              <p>Call Us: + 1235 2355 98</p>
+            </div>
+          </div>
+        </div>
+        <div class="apply">
+          <h4>Click</h4>
+        </div>
+      </div>
+
+      <!-- <mat-toolbar color="primary" class="navig">
+        <button mat-icon-button (click)="toggleMenu()">
+          <mat-icon>{{ isMenuOpen ? 'close' : 'menu' }}</mat-icon>
+        </button>
+      
+        <mat-list [ngClass]="{ 'open': isMenuOpen }">
+          <mat-list-item >Home</mat-list-item>
+          <mat-list-item routerLink="/"><div class="dropdown" matTooltip="TPO Team">
+            <button mat-button [matMenuTriggerFor]="tpoMenu" class="dropbtn">TPO Team</button>
+            <mat-menu #tpoMenu="matMenu">
+              <button mat-menu-item><a routerLink="/tpoteam">Student's Cell</a></button>
+              <button mat-menu-item><a routerLink="/faculty">Faculty</a></button>
+            </mat-menu>
+          </div></mat-list-item>
+          <mat-list-item routerLink="/">Home</mat-list-item>
+          <mat-list-item routerLink="/">Home</mat-list-item>
+          <mat-list-item routerLink="/">Home</mat-list-item>
+          <mat-list-item routerLink="/">Home</mat-list-item>
+          <mat-list-item routerLink="/">Home</mat-list-item>
+          <mat-list-item routerLink="/">Home</mat-list-item>
+        </mat-list>
+      </mat-toolbar> -->
+
+
+      <mat-toolbar color="primary" class="navig">
+        <div class="nav">
+          <a routerLink="/">Home</a>
+        </div>
+
+        <div class="nav">
+          <a routerLink="/about">About Us</a>
+        </div>
+
+        <div class="dropdown" matTooltip="TPO Team">
+          <button mat-button [matMenuTriggerFor]="tpoMenu" class="dropbtn">TPO Team</button>
+          <mat-menu #tpoMenu="matMenu">
+            <button mat-menu-item><a style="color:rgb(85, 26, 139)" routerLink="/tpoteam">Student's Cell</a></button>
+            <button mat-menu-item><a routerLink="/faculty">Faculty</a></button>
+          </mat-menu>
+        </div>
+
+        <!-- <div class="dropdown">
+          <button mat-button [matMenuTriggerFor]="tpoMenu"class="dropbtn" >TPO Team</button>
+          <mat-menu #tpoMenu="matMenu">
+            <button mat-menu-item><a routerLink="/tpoteam">Student's Cell</a></button>
+            <button mat-menu-item><a routerLink="/faculty">Faculty</a></button>
+          </mat-menu>
+        </div> -->
+
+        <div class="dropdown">
+          <button mat-button [matMenuTriggerFor]="placementsMenu" class="dropbtn">Placements</button>
+          <mat-menu #placementsMenu="matMenu">
+            <button mat-menu-item><a style="color:rgb(85, 26, 139)" routerLink="/placements">Placements</a></button>
+            <button mat-menu-item><a style="color:rgb(85, 26, 139)" routerLink="/placementSummary">Placement Summary</a></button>
+            <button mat-menu-item><a style="color:rgb(85, 26, 139)" routerLink="/placementPolicy">Placement Policy</a></button>
+            <button mat-menu-item><a style="color:rgb(85, 26, 139)" routerLink="/whyGecj">Why GECJ?</a></button>
+          </mat-menu>
+        </div>
+
+        <div class="nav">
+          <a routerLink="/gallery">Gallery</a>
+        </div>
+
+        <div class="dropdown">
+          <button mat-button [matMenuTriggerFor]="brochureMenu" class="dropbtn">Brochure</button>
+          <mat-menu #brochureMenu="matMenu">
+            <button mat-menu-item><a style="color:rgb(85, 26, 139)" routerLink="/college-brochure" >College Brochure</a></button>
+            <button mat-menu-item><a style="color:rgb(85, 26, 139)" href="./other/Placement Brochure 2018.pdf" target="_blank">Placement
+                Brochure</a></button>
+          </mat-menu>
+        </div>
+
+        <div class="nav">
+          <a routerLink="/faqs">FAQ's?</a>
+        </div>
+
+        <div class="nav">
+          <a routerLink="/contactus">Contact Us</a>
+        </div>
+      </mat-toolbar>
+
+      <!-- <div class="navig">
+        <div class="nav">
+          <a routerLink="/">Home</a>
+        </div>
+
+
+        <div class="dropdown">
+          <button class="dropbtn">About Us</button>
+          <div class="dropdown-content">
+            <a routerLink="/about">Office of Training & Placement</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">TPO Team</button>
+          <div class="dropdown-content">
+            <a routerLink="/tpoteam">Student's Cell</a>
+            <a routerLink="/faculty">Faculty</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Placements</button>
+          <div class="dropdown-content">
+            <a routerLink="/placements">Placements</a>
+            <a routerLink="/placementSummary">Placement Summary</a>
+            <a routerLink="/placementPolicy">Placement Policy</a>
+            <a routerLink="#">Facilities</a>
+            <a routerLink="/whyGecj">Why GECJ?</a>
+          </div>
+        </div>
+        <div class="nav">
+          <a routerLink="/gallery">Gallery</a>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Brochure</button>
+          <div class="dropdown-content">
+            <a routerLink="/college-brochure">College Brochure</a>
+            <a href="./other/Placement Brochure 2018.pdf">Placement Brochure</a>
+          </div>
+        </div>
+
+        <div class="nav">
+          <a routerLink="/faqs">FAQ's?</a>
+        </div>
+        <div class="nav">
+          <a routerLink="/contactus">Contact Us</a>
+        </div>
+      </div> -->
+    </div>
+    <div class="marquee">
+      <marquee behavior=alternate direction="top">
+        <h4>For the Students & By the Students.</h4>
+      </marquee>
+    </div>
+  </div>
+  <!-- End: HEADER -->
+
+  <!-- start: MAIN CONTENT -->
+  <router-outlet></router-outlet>
+  <!-- End: MAIN CONTENT -->
+
+  <!-- Start: FOOTER -->
+  <footer>
+    <div class="footer-upper">
+      <div class="row">
+        <div class="span3">
+          <h4><b>Information</b></h4>
+          <ul class="quick-links">
+            <li><a href="http://www.rajasthan.gov.in" target="_blank">Government Of Rajasthan</a></li>
+            <li><a href="http://www.aicte-india.org" target="_blank">AICTE</a></li>
+            <li><a href="http://gecj.ac.in/" target="_blank">GECJ</a></li>
+            <li><a href="http://gecj.ac.in/library/ej.htm" target="_blank">College E-journals</a></li>
+          </ul><br>
+
+        </div>
+        <div class="span3">
+          <h4 class="icon-star icon-white"><b>&nbsp;External Links</b></h4>
+          <ul class="quick-links">
+            <li><a href="http://nss.nic.in/" target="_blank">National Service Scheme</a></li>
+            <li><a href="http://employmentnews.gov.in/" target="_blank">Employment Portal</a></li>
+            <li><a href="http://employment.livelihoods.rajasthan.gov.in/Index.aspx" target="_blank">
+                <p>Dept. of Skill,Employment & Entrepreneurship</p>
+              </a></li>
+            <li><a href="https://www.ncs.gov.in/" target="_blank">National career Service</a></li>
+          </ul>
+          <br>
+        </div>
+        <div class="span3">
+          <h3 class="icon-legal icon-white"><b>&nbsp;Address</b></h3>
+          <p>Govt. Engineering College Jhalawar</p>
+          <p>Sunel Road, Village: Chandlai,Tehsil-Jhalrapatan, Jhalawar-326023, Rajasthan.</p>
+          <h4>Social Network</h4><br>
+
+        </div>
+        <div class="span3">
+          <p>Last Date: {{ lastDate | date: 'yyyy-MM-dd HH:mm:ss' }}</p>
+          <marquee class="span4" style="height:15vh" direction="up" scrollamount="3" nmouseover="stop()"
+            onmouseout="start()">
+            <div class="span4">
+              <a href="http://www.nvsp.in" target="_blank"><img src="/assets/nvsp.png" height="50"></a>
+              <a href="http://www.digitalindia.gov.in/" target="_blank"><img src="/assets/digi.png" height="50"></a>
+              <a href="http://data.gov.in/" target="_blank"><img src="/assets/data-gov-in.jpg" height="50"></a>
+              <a href="https://india.gov.in/" target="_blank"><img src="/assets/india.png" height="50"></a>
+              <a href="http://meity.gov.in/" target="_blank"><img src="/assets/miety.png" height="80"></a>
+            </div>
+          </marquee>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="footer-lower">
+      <div class="footer">
+        <div class="rights">
+          <h5>All Rights Reserved. | &copy; Govt. Engg. College, Jhalawar</h5>
+        </div>
+        <h4>Developed by: &nbsp; <div class="developed">
+            <a href="https://www.facebook.com/vikasdhak">VIKAS DHAKAD</a> & <a
+              href="https://www.facebook.com/vipinmeena2012">VIPIN MEENA</a> & <a
+              href="https://www.facebook.com/gsv0009">GURPINDER SINGH </a>
+          </div>
+          <h4>Redesigned by:</h4>
+          <div class="design">
+            <a href="https://www.facebook.com/aliaman.khan.524">ALI AMAN KHAN</a> & <a
+              href="https://www.facebook.com/abhishek.angel.946">ABHISHEK KUMAR</a>
+          </div>
+          ( Department Of Computer Science, Government Engineering College Jhalawar )
+        </h4>
+      </div>
+    </div>
+  </footer>
+  <!-- End: FOOTER -->
+  <!-- End: FOOTER -->
+
+</body>
+
+</html>

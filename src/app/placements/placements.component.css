@@ -1,0 +1,29 @@
+.page-header{
+  text-align: center;
+  line-height: 100px;
+}
+table {
+  width: 100%;
+}
+
+.upper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upperTable {
+  width: 95%;
+  padding-bottom: 40px;
+}
+
+.lower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lowerTable {
+  width: 95%;
+  padding-bottom: 40px;
+}

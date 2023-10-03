@@ -1,0 +1,526 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    max-width: 100%;
+}
+
+h1 {
+    color: black;
+    font-size: 4rem;
+    letter-spacing: -3px;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
+    position: relative;
+    z-index: 3;
+}
+
+.container {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffff;
+}
+
+/* .COVER img {
+    width: 100%;
+} */
+
+.topHeading {
+    /* padding: 0%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 13vh;
+    /* width: 100%; */
+    background-color: black;
+    /* background: rgba(0, 0, 0, 0.34); */
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col a {
+    font-size: 4rem;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.tpo a {
+    font-size: 3rem;
+    color: #ffff;
+    text-decoration: none;
+}
+
+/* .logo img {
+    height: 15vh;
+    border: none;
+    border-radius: 8vh;
+    display: flex;
+    float: left;
+    margin-top: 3vh;
+    margin-left: 2vw;
+} */
+.ban_bar {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 14vh;
+
+}
+
+.fox2 {
+    height: 60px;
+    width: 60px;
+    background-image: url(/assets/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fox2 h4 {
+    font-size: 1.8rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.em {
+    /* font-size: 18px; */
+    margin-left: 20px;
+}
+
+.em-icon {
+    font-size: 1.8rem;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cal {
+
+    /* font-size: 18px;  */
+    margin-left: 20px;
+}
+
+.cal-icon {
+    font-size: 1.8rem;
+}
+
+.apply {
+    background-color: #fd5f00;
+    font-size: 20px;
+    width: 122px;
+    ;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navig {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: black;
+    width: 70%;
+}
+
+/* .navig a:hover{
+    color: hsl(200 100% 80%);
+    border: 0px;
+    border-radius: 5px;
+} */
+.nav a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: Poppins;
+}
+
+.nav {
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.about a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* .dropdown {
+    background-color: #000000;
+    color: white;
+    border: 2px solid thick gray;
+    height: 7vh;
+    display: inline-block;
+    position: relative;
+} */
+/* button{
+    border: none;
+} */
+
+/* .dropdown-content {
+    display: none;
+    position: fixed;
+    width: 9%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+} */
+
+/* .dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+.dropbtn {
+    font-size: 1.2rem;
+    height: 7vh;
+    background-color: #000000;
+    color: white !important;
+    font-family: Poppins;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button:hover+mat-menu {
+    display: block !important;
+}
+
+.mat-menu-panel {
+    display: none !important;
+    position: absolute;
+    z-index: 1000;
+}
+
+/* .dropbtn:hover{
+    color: hsl(200, 82%, 40%);
+} */
+
+/* .dropdown-content a {
+    display: block;
+    background-color: white;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.dropdown-content a:hover {
+    color: #000000;
+    background-color: #3fd9ed;
+} */
+
+/* .below {
+    height: 28vh;
+}
+
+.logo {
+    width: 33vw;
+} */
+
+/* .left {
+    width: 33vw;
+}
+.main{
+    background-color: #2dc7bb;  
+}
+
+.dipper{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+} */
+.marquee {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+}
+
+.caption1 {
+    /* margin-top: 5px; */
+    /* border: 1px solid grey; */
+    /* border-radius: 2vh; */
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    /* padding-right: 3vw;
+    padding-left: 3vw; */
+    width: 80vw;
+    /* box-shadow: 6px 6px 6px grey; */
+}
+
+.caption1 marquee h4 {
+    font-family: poppins;
+}
+
+footer {
+    color: #ffff;
+    background-color: #000000;
+}
+
+.footer-upper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 3vw;
+}
+
+.span3 {
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    line-height: 30px;
+
+}
+
+.quick-links li a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.quick-links li a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.span4 {
+    padding-top: 1vh;
+    padding-bottom: 0%;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0%;
+}
+
+.developed a {
+    color: #ffff;
+    font-family: Poppins;
+}
+
+.developed :hover {
+    color: blue;
+}
+
+.design a {
+    font-size: 1rem;
+    color: #ffff;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+.design :hover {
+    color: blue;
+}
+
+.footer-lower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.footer {
+    text-align: center;
+    text-decoration: none;
+    color: #ffff;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+
+.rights {
+    text-decoration: underline;
+}
+
+.footer h5 {
+    color: #ffff;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+.footer h4 {
+    color: #ffff;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+.footer h4 a {
+    text-decoration: none;
+}
+/* Add this to your component's CSS file or global styles */
+.open {
+    display: block;
+  }
+  
+  /* Hide the list by default */
+  mat-list {
+    display: none;
+  }
+  
+/* ********************************************************************************************* */
+/* Styles for other devices */
+@media (min-width: 1195px) and (max-width: 2052px) {
+    html {
+        font-size: 120%;
+    }
+
+    .col a {
+        font-size: 3rem;
+        color: #ffff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .tpo a {
+        font-size: 2rem;
+        color: #ffff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1195px) {
+    html {
+        font-size: 120%;
+    }
+
+    .col a {
+        font-size: 2.5rem;
+        color: #ffff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .tpo a {
+        font-size: 1.5rem;
+        color: #ffff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+@media (min-width: 537px) and (max-width: 768px) {
+    html {
+        font-size: 90%;
+    }
+
+    .col a {
+        font-size: 1.5rem;
+    }
+
+    .tpo a {
+        font-size: 1rem;
+    }
+    .footer-upper{
+        padding: 0px;
+    }
+    .row {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 537px) {
+    html {
+        font-size: 90%;
+    }
+
+    .col a {
+        font-size: 1.2rem;
+    }
+
+    .tpo a {
+        font-size: 0.9rem;
+    }
+    .footer-upper{
+        padding: 5px;
+    }
+    .row {
+        flex-direction: column;
+        padding: 5px;
+    }
+}
+
+@media (min-width:336px) and (max-width: 425px) {
+    html {
+        font-size: 90%;
+    }
+
+    .col a {
+        font-size: 1.1rem;
+    }
+
+    .tpo a {
+        font-size: 0.9rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 336px) {
+    html {
+        font-size: 90%;
+    }
+
+    .col a {
+        font-size: 1rem;
+    }
+
+    .tpo a {
+        font-size: 0.9rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
