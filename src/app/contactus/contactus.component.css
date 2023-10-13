@@ -17,7 +17,7 @@
     height: 550px;
     width: 100%;
     font-size: 20px;
-    background-color: hsla(18, 96%, 50%, 0.5);
+    background-color: hsla(18, 96%, 50%, 0.2);
    
 }
 .background-image {
@@ -46,7 +46,7 @@ iframe{
     width:50%;
     height: 50%;
     padding: 7%;
-    color: #ffff;
+    /* color: #ffff; */
     font-size: 1.2rem;
 }
 .container{
@@ -83,4 +83,12 @@ iframe{
     width: 100%;
     background-color: rgba(190, 30, 30, 0.1);
     z-index: 2;
+}
+.Transport{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
 }

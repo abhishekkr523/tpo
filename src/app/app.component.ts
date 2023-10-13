@@ -11,10 +11,11 @@ export class AppComponent {
    // Initialize a variable to track the menu's open state
   isMenuOpen = false;
 
-  // Function to toggle the menu's open/close state
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
+ // Function to toggle the menu's open/close state
+toggleMenu() {
+  this.isMenuOpen = !this.isMenuOpen;
+}
+
 
 
 

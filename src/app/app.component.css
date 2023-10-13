@@ -28,10 +28,6 @@ h1 {
     background-color: #ffff;
 }
 
-/* .COVER img {
-    width: 100%;
-} */
-
 .topHeading {
     /* padding: 0%; */
     display: flex;
@@ -40,9 +36,7 @@ h1 {
     flex-direction: row;
     width: 100%;
     height: 13vh;
-    /* width: 100%; */
     background-color: black;
-    /* background: rgba(0, 0, 0, 0.34); */
 }
 
 .right {
@@ -65,18 +59,8 @@ h1 {
     text-decoration: none;
 }
 
-/* .logo img {
-    height: 15vh;
-    border: none;
-    border-radius: 8vh;
-    display: flex;
-    float: left;
-    margin-top: 3vh;
-    margin-left: 2vw;
-} */
 .ban_bar {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: space-between;
     width: 70%;
@@ -110,7 +94,6 @@ h1 {
 }
 
 .em {
-    /* font-size: 18px; */
     margin-left: 20px;
 }
 
@@ -125,8 +108,6 @@ h1 {
 }
 
 .cal {
-
-    /* font-size: 18px;  */
     margin-left: 20px;
 }
 
@@ -144,7 +125,27 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+/* Styles for menu bar */
+.open {
+    display: block;
+  }
+  mat-list {
+    display: none;
+  }
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+    background-color: #fd5f00;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .nav-sub-element a{
+    color: #fd5f00;
+}
+/* End styles for menu bar */
 
+/* styles for navigation bar */
 .navig {
     display: flex;
     flex-direction: row;
@@ -154,22 +155,15 @@ h1 {
     background-color: black;
     width: 70%;
 }
-
-/* .navig a:hover{
-    color: hsl(200 100% 80%);
-    border: 0px;
-    border-radius: 5px;
-} */
+.nav {
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
 .nav a {
     color: white !important;
     text-decoration: none;
     font-size: 1.2rem;
     font-family: Poppins;
-}
-
-.nav {
-    margin-right: 2vw;
-    margin-left: 2vw;
 }
 
 .about a {
@@ -178,91 +172,21 @@ h1 {
 
 }
 
-/* .dropdown {
-    background-color: #000000;
-    color: white;
-    border: 2px solid thick gray;
-    height: 7vh;
-    display: inline-block;
-    position: relative;
-} */
-/* button{
-    border: none;
-} */
-
-/* .dropdown-content {
-    display: none;
-    position: fixed;
-    width: 9%;
-    overflow: auto;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-} */
-
-/* .dropdown:hover .dropdown-content {
-    display: block;
-} */
-
 .dropbtn {
     font-size: 1.2rem;
     height: 7vh;
-    background-color: #000000;
     color: white !important;
     font-family: Poppins;
     cursor: pointer;
+    width: 100%;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
 }
+/* End styles for navigation bar */
 
-.dropdown button:hover+mat-menu {
-    display: block !important;
-}
-
-.mat-menu-panel {
-    display: none !important;
-    position: absolute;
-    z-index: 1000;
-}
-
-/* .dropbtn:hover{
-    color: hsl(200, 82%, 40%);
-} */
-
-/* .dropdown-content a {
-    display: block;
-    background-color: white;
-    color: #000000;
-    padding: 5px;
-    text-decoration: none;
-    border: 1px solid black;
-}
-
-.dropdown-content a:hover {
-    color: #000000;
-    background-color: #3fd9ed;
-} */
-
-/* .below {
-    height: 28vh;
-}
-
-.logo {
-    width: 33vw;
-} */
-
-/* .left {
-    width: 33vw;
-}
-.main{
-    background-color: #2dc7bb;  
-}
-
-.dipper{
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-} */
 .marquee {
     display: flex;
     /* flex-direction: column; */
@@ -272,21 +196,15 @@ h1 {
 }
 
 .caption1 {
-    /* margin-top: 5px; */
-    /* border: 1px solid grey; */
-    /* border-radius: 2vh; */
     padding-top: 2vh;
     padding-bottom: 2vh;
-    /* padding-right: 3vw;
-    padding-left: 3vw; */
     width: 80vw;
-    /* box-shadow: 6px 6px 6px grey; */
 }
 
 .caption1 marquee h4 {
     font-family: poppins;
 }
-
+/* Start footer*/
 footer {
     color: #ffff;
     background-color: #000000;
@@ -310,8 +228,6 @@ footer {
     padding:2rem;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     line-height: 30px;
 
 }
@@ -390,18 +306,19 @@ footer {
 .footer h4 a {
     text-decoration: none;
 }
-/* Add this to your component's CSS file or global styles */
-.open {
-    display: block;
-  }
-  
-  /* Hide the list by default */
-  mat-list {
-    display: none;
-  }
-  
+  /* End end*/
 /* ********************************************************************************************* */
 /* Styles for other devices */
+@media (min-width: 1150px) and (max-width: 1600px) {
+    .menu-bar{
+        display: none;
+    }
+}
+@media (min-width: 0px) and (max-width: 1150px) {
+    .navig{
+        display: none;
+    }
+}
 @media (min-width: 1195px) and (max-width: 2052px) {
     html {
         font-size: 120%;
@@ -440,6 +357,7 @@ footer {
         text-decoration: none;
         font-weight: 500;
     }
+    
 }
 
 

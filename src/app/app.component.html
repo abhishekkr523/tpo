@@ -47,35 +47,58 @@
           </div>
         </div>
         <div class="apply">
-          <h4>Click</h4>
+          <h5><a href="http://gecj.ac.in/" target="_blank">
+            Click
+          </a></h5>
         </div>
       </div>
-
-      <!-- <mat-toolbar color="primary" class="navig">
+<!-- ****Start code for menu-bar **** -->
+      <div class="menu-bar">
+        <!-- Add a button for the hamburger icon -->
         <button mat-icon-button (click)="toggleMenu()">
           <mat-icon>{{ isMenuOpen ? 'close' : 'menu' }}</mat-icon>
         </button>
-      
+        <!-- Rest of HTML content... -->
         <mat-list [ngClass]="{ 'open': isMenuOpen }">
-          <mat-list-item >Home</mat-list-item>
-          <mat-list-item routerLink="/"><div class="dropdown" matTooltip="TPO Team">
-            <button mat-button [matMenuTriggerFor]="tpoMenu" class="dropbtn">TPO Team</button>
+          <mat-list-item routerLink="/">Home</mat-list-item>
+          <mat-list-item routerLink="/about">About Us</mat-list-item>
+          <div matTooltip="TPO Team">
+            <mat-list-item [matMenuTriggerFor]="tpoMenu">TPO Team</mat-list-item>
             <mat-menu #tpoMenu="matMenu">
-              <button mat-menu-item><a routerLink="/tpoteam">Student's Cell</a></button>
-              <button mat-menu-item><a routerLink="/faculty">Faculty</a></button>
+              <button mat-menu-item class="nav-sub-element"><a routerLink="/tpoteam">Student's Cell</a></button>
+              <button mat-menu-item class="nav-sub-element"><a routerLink="/faculty">Faculty</a></button>
             </mat-menu>
-          </div></mat-list-item>
-          <mat-list-item routerLink="/">Home</mat-list-item>
-          <mat-list-item routerLink="/">Home</mat-list-item>
-          <mat-list-item routerLink="/">Home</mat-list-item>
-          <mat-list-item routerLink="/">Home</mat-list-item>
-          <mat-list-item routerLink="/">Home</mat-list-item>
-          <mat-list-item routerLink="/">Home</mat-list-item>
+          </div>
+          <div matTooltip="Placements">
+            <mat-list-item [matMenuTriggerFor]="placementsMenu">Placements</mat-list-item>
+            <mat-menu #placementsMenu="matMenu">
+              <button mat-menu-item class="nav-sub-element"><a routerLink="/placements">Placements</a></button>
+              <button mat-menu-item class="nav-sub-element"><a routerLink="/placementSummary">Placement
+                  Summary</a></button>
+              <button mat-menu-item class="nav-sub-element"><a routerLink="/placementPolicy">Placement
+                  Policy</a></button>
+              <button mat-menu-item class="nav-sub-element"><a routerLink="/whyGecj">Why GECJ?</a></button>
+            </mat-menu>
+          </div>
+          <mat-list-item routerLink="/gallery">Gallery</mat-list-item>
+          <div matTooltip="TPO Team">
+            <mat-list-item [matMenuTriggerFor]="brochureMenu">Brochure</mat-list-item>
+            <mat-menu #brochureMenu="matMenu">
+              <button mat-menu-item class="nav-sub-element"><a routerLink="/college-brochure">College
+                  Brochure</a></button>
+              <button mat-menu-item class="nav-sub-element"><a href="./other/Placement Brochure 2018.pdf"
+                  target="_blank">Placement
+                  Brochure</a></button>
+            </mat-menu>
+          </div>
+          <mat-list-item routerLink="/faqs">FAQ's?</mat-list-item>
+          <mat-list-item routerLink="/contactus">Contact Us</mat-list-item>
         </mat-list>
-      </mat-toolbar> -->
+      </div>
 
-
-      <mat-toolbar color="primary" class="navig">
+<!-- **** End code for menu-bar **** -->
+<!-- **** start code for navigation-bar **** -->
+      <mat-toolbar class="navig">
         <div class="nav">
           <a routerLink="/">Home</a>
         </div>
@@ -87,26 +110,21 @@
         <div class="dropdown" matTooltip="TPO Team">
           <button mat-button [matMenuTriggerFor]="tpoMenu" class="dropbtn">TPO Team</button>
           <mat-menu #tpoMenu="matMenu">
-            <button mat-menu-item><a style="color:rgb(85, 26, 139)" routerLink="/tpoteam">Student's Cell</a></button>
-            <button mat-menu-item><a routerLink="/faculty">Faculty</a></button>
+            <button mat-menu-item class="nav-sub-element"><a style="color:rgb(85, 26, 139)"
+                routerLink="/tpoteam">Student's Cell</a></button>
+            <button mat-menu-item class="nav-sub-element"><a routerLink="/faculty">Faculty</a></button>
           </mat-menu>
         </div>
-
-        <!-- <div class="dropdown">
-          <button mat-button [matMenuTriggerFor]="tpoMenu"class="dropbtn" >TPO Team</button>
-          <mat-menu #tpoMenu="matMenu">
-            <button mat-menu-item><a routerLink="/tpoteam">Student's Cell</a></button>
-            <button mat-menu-item><a routerLink="/faculty">Faculty</a></button>
-          </mat-menu>
-        </div> -->
 
         <div class="dropdown">
           <button mat-button [matMenuTriggerFor]="placementsMenu" class="dropbtn">Placements</button>
           <mat-menu #placementsMenu="matMenu">
-            <button mat-menu-item><a style="color:rgb(85, 26, 139)" routerLink="/placements">Placements</a></button>
-            <button mat-menu-item><a style="color:rgb(85, 26, 139)" routerLink="/placementSummary">Placement Summary</a></button>
-            <button mat-menu-item><a style="color:rgb(85, 26, 139)" routerLink="/placementPolicy">Placement Policy</a></button>
-            <button mat-menu-item><a style="color:rgb(85, 26, 139)" routerLink="/whyGecj">Why GECJ?</a></button>
+            <button mat-menu-item class="nav-sub-element"><a routerLink="/placements">Placements</a></button>
+            <button mat-menu-item class="nav-sub-element"><a routerLink="/placementSummary">Placement
+                Summary</a></button>
+            <button mat-menu-item class="nav-sub-element"><a routerLink="/placementPolicy">Placement
+                Policy</a></button>
+            <button mat-menu-item class="nav-sub-element"><a routerLink="/whyGecj">Why GECJ?</a></button>
           </mat-menu>
         </div>
 
@@ -117,8 +135,10 @@
         <div class="dropdown">
           <button mat-button [matMenuTriggerFor]="brochureMenu" class="dropbtn">Brochure</button>
           <mat-menu #brochureMenu="matMenu">
-            <button mat-menu-item><a style="color:rgb(85, 26, 139)" routerLink="/college-brochure" >College Brochure</a></button>
-            <button mat-menu-item><a style="color:rgb(85, 26, 139)" href="./other/Placement Brochure 2018.pdf" target="_blank">Placement
+            <button mat-menu-item class="nav-sub-element"><a routerLink="/college-brochure">College
+                Brochure</a></button>
+            <button mat-menu-item class="nav-sub-element"><a href="./other/Placement Brochure 2018.pdf"
+                target="_blank">Placement
                 Brochure</a></button>
           </mat-menu>
         </div>
@@ -131,54 +151,7 @@
           <a routerLink="/contactus">Contact Us</a>
         </div>
       </mat-toolbar>
-
-      <!-- <div class="navig">
-        <div class="nav">
-          <a routerLink="/">Home</a>
-        </div>
-
-
-        <div class="dropdown">
-          <button class="dropbtn">About Us</button>
-          <div class="dropdown-content">
-            <a routerLink="/about">Office of Training & Placement</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">TPO Team</button>
-          <div class="dropdown-content">
-            <a routerLink="/tpoteam">Student's Cell</a>
-            <a routerLink="/faculty">Faculty</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Placements</button>
-          <div class="dropdown-content">
-            <a routerLink="/placements">Placements</a>
-            <a routerLink="/placementSummary">Placement Summary</a>
-            <a routerLink="/placementPolicy">Placement Policy</a>
-            <a routerLink="#">Facilities</a>
-            <a routerLink="/whyGecj">Why GECJ?</a>
-          </div>
-        </div>
-        <div class="nav">
-          <a routerLink="/gallery">Gallery</a>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Brochure</button>
-          <div class="dropdown-content">
-            <a routerLink="/college-brochure">College Brochure</a>
-            <a href="./other/Placement Brochure 2018.pdf">Placement Brochure</a>
-          </div>
-        </div>
-
-        <div class="nav">
-          <a routerLink="/faqs">FAQ's?</a>
-        </div>
-        <div class="nav">
-          <a routerLink="/contactus">Contact Us</a>
-        </div>
-      </div> -->
+      <!-- ****End code for navigation-bar **** -->
     </div>
     <div class="marquee">
       <marquee behavior=alternate direction="top">
